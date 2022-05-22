@@ -1,6 +1,12 @@
-from Conta_Atributos import Conta
-conta = Conta(123, "Willian", 100.00, 1000.00)
+class Base_Dados:
 
-cliente = {123 : conta.extrato(), "Rafaela" : 222}
-for names in cliente.values():
-    print(names)
+    def __init__(self, idconta):
+        self.idconta = idconta
+        
+    def cliente(self, valor):
+        self.idconta = valor
+        dados = {100 : "Willian", 101 : "Rafaela", 102 : "Andre", 103 : "Juliana", 104 : "Luke"}
+        id = dados.get(self.idconta)
+        return id
+    
+    
