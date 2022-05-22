@@ -1,12 +1,12 @@
 class Base_Dados:
 
     def __init__(self, idconta):
-        self.idconta = idconta
+        self.__idconta = idconta
         
     def cliente(self, valor):
-        self.idconta = valor
+        self.__idconta = valor
         dados = {100 : "Willian", 101 : "Rafaela", 102 : "Andre", 103 : "Juliana", 104 : "Luke"}
-        id = dados.get(self.idconta)
+        id = dados.get(self.__idconta)
         return id
     
     def senha(self, valor):
@@ -20,7 +20,7 @@ class Base_Dados:
                 break
             else: 
                 print("\nPIN incorreto! Tente Novamente...")
-            
+        
 
         
     
