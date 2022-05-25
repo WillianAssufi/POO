@@ -2,7 +2,11 @@ class Base_Dados:
 
     def __init__(self, idconta):
         self.__idconta = idconta
-        
+
+    def saldos(self):
+        dados = {100 : 2000.00, 101 : 1500.00, 102 : 1000.00, 103 : 500.00, 104 : 50.00}
+        return dados
+
     def cliente(self, valor):
         self.__idconta = valor
         dados = {100 : "Willian", 101 : "Rafaela", 102 : "Andre", 103 : "Juliana", 104 : "Luke"}
