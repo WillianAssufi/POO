@@ -24,10 +24,3 @@ class Base_Dados:
                 break
             else: 
                 print("\nPIN incorreto! Tente Novamente...")
-        
-
-        
-    
-
-
-        

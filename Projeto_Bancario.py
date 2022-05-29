@@ -11,7 +11,7 @@ while True:
     print("\n{} Seja Bem vindo(a) ao SystemInvest\nEscolha a operação\n".format(contas.cliente(id)))
 
     while(op != 0):
-        op = int(input("(1)Sacar\n(2)Depositar\n(3)Extrato\n(4)Transferir\n(5)Deslogar\n(0)Fechar Programa\n\n"))
+        op = int(input("\n(1)Sacar\n(2)Depositar\n(3)Extrato\n(4)Transferir\n(5)Deslogar\n(0)Fechar Programa\n\n"))
 
         if(op == 1):
             valor = float(input("\nDigite o valor que deseja sacar: R$"))
